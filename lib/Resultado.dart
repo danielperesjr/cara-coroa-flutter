@@ -19,7 +19,7 @@ class _ResultadoState extends State<Resultado> {
           children: [
             Image.asset("images/moeda_cara.png"),
             GestureDetector(
-              onTap: (){},
+              onTap: () => Navigator.pop(context),
               child: Image.asset("images/botao_voltar.png"),
             )
           ],
