@@ -12,14 +12,14 @@ class Jogar extends StatefulWidget {
 class _JogarState extends State<Jogar> {
 
   void _exibirResultado() {
-    var _itens = ["cara", "coroa"];
-    var _numero = Random().nextInt(_itens.length);
-    var _resultado = _itens[_numero];
-    
+    var itens = ["cara", "coroa"];
+    var numero = Random().nextInt(itens.length);
+    var resultado = itens[numero];
+
     Navigator.push(
         context, 
         MaterialPageRoute(
-            builder: (context) => Resultado(_resultado)
+            builder: (context) => Resultado(resultado)
         )
     );
   }
